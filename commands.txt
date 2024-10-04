@@ -2,4 +2,7 @@
  dvc init 
  git remote add origin https://github.com/prachi078/dvc_demo_online.git
  dvc remote add -d myremote C:\Users\prach\AppData\Local\Temp\campusx_storage
- 
+ git add .
+ git commit -m "initial commit with dvc config files"
+ python .\src\data_ingestion.py
+ dvc add .\data\customer.csv
