@@ -11,4 +11,13 @@
  dvc push
  git push -u origin main
 
- 
+ ---changes
+ python .\src\data_ingestion.py
+dvc status
+dvc add .\data\customer.csv
+git add .
+git commit -m "add second experiment"
+dvc push
+git push -u origin main
+
+git log --oneline
