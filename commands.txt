@@ -6,3 +6,9 @@
  git commit -m "initial commit with dvc config files"
  python .\src\data_ingestion.py
  dvc add .\data\customer.csv
+ git add .
+ git commit -m "add first experiment"
+ dvc push
+ git push -u origin main
+
+ 
